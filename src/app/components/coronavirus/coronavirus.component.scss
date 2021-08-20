@@ -4,7 +4,7 @@
   
   .corona-country-list {
     width: 100%;
-    height: 70%;
+    height: 65%;
     overflow: auto;
     padding-bottom: 0.5rem;
     padding-top: 0;
@@ -94,20 +94,6 @@
     font-weight: bold;
   }
 
-  .searchInput {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    padding: 0.6rem 0.6rem 0.6rem 1.5rem !important;
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-  }
-
-  .covid-search {
-    margin-top: 0;
-  }
-
   .country-container {
     margin-bottom: 1rem;
   }
@@ -146,10 +132,6 @@
    margin-left: 2rem; 
   }
 
-  .detail-container {
-    //background-color: #ffffff;
-  }
-
   .detail-list {
     //background-color: #ffffff;
     padding: 0;
@@ -180,26 +162,4 @@
     color: #000000;
   }
 
-  .chips {
-    text-align: left;
-    margin-top: 1.5rem;
-    width: 100px;
-  }
   
-  .chips div{
-    text-align: center;
-    font-size: 0.67rem;
-    padding: 0.3rem 0.3rem;
-    margin: 1.5rem 0;
-    border: 1px solid #dbd8d8;
-    border-radius: 40px;
-    background-color: #ffffff;
-    line-height: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .chips div span{
-    font-size: 0.57rem;
-    color: gray;
-  }
