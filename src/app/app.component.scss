@@ -60,8 +60,8 @@
 /* Large and up */
 @media screen and (min-width: 64em) {
     .card-covid19 {
-        height: calc(100vh - 210px);
-        overflow-x: hidden;
-        overflow-y: auto;
+        height: calc(100vh - 200px);
+        //overflow-x: hidden;
+        //overflow-y: auto;
     }
 }
