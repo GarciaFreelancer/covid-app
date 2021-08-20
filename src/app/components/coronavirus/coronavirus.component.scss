@@ -1,0 +1,205 @@
+.e-split-btn-wrapper .e-dropdown-btn {
+    margin-top: 13px;
+  }
+  
+  .corona-country-list {
+    width: 100%;
+    height: 70%;
+    overflow: auto;
+    padding-bottom: 0.5rem;
+    padding-top: 0;
+  }
+  
+  .coranaTable {
+    margin-top: 1rem;
+  }
+
+  .custom {
+    display: flex;
+  }
+
+  .center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+  }
+  
+  .global-date {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .legend {
+    font-size: 0.67rem;
+    color: gray;
+    font-weight: bold;
+  }
+  
+  .gcircle {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .global-date1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    color: red;
+  }
+  
+  .global-date2 {
+    margin-right: 0.6rem;
+  }
+  
+  .global-date3 {
+    text-align: center;
+  }
+
+  .corona-country {
+    display: flex;
+    margin: 1rem;
+  }
+
+  .firstCol {
+    display: flex;
+  }
+
+  .coronaFlag {
+    font-size: 2.5rem;
+    padding: 4px;
+  }
+
+  .country-name {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  .actulizedText {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .actulizedText:hover {
+    text-decoration: underline;
+  }
+
+  .confirmed-value {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .searchInput {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem 0.6rem 0.6rem 1.5rem !important;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  }
+
+  .covid-search {
+    margin-top: 0;
+  }
+
+  .country-container {
+    margin-bottom: 1rem;
+  }
+
+  .countryImage {
+    width: 34px;
+    height: 35px;
+    padding-top: 5px;
+  }
+
+  .c-list-number {
+    background-color: #ffffff;
+    padding: 1.7px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  .first-group {
+    display: flex;
+  }
+
+  .second-group {
+    margin-left: 15px;
+    line-height: 1.2rem;
+  }
+
+  .third-group {
+    margin-left: auto;
+  }
+
+  .container-list {
+    margin-bottom: 0.8rem;
+  }
+
+  .seach-case {
+   margin-left: 2rem; 
+  }
+
+  .detail-container {
+    //background-color: #ffffff;
+  }
+
+  .detail-list {
+    //background-color: #ffffff;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .detail-country {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.3rem 0.3rem;
+    margin: 0.5rem 4rem ;
+    font-weight: bold;
+    border: 1px solid #dbd8d8;
+    border-radius: 40px;
+    background-color: #ffffff;
+    line-height: 0.7rem;
+  }
+
+  .detail-country span {
+   font-size: 0.5rem;
+    color: rgb(150, 148, 148);
+  }
+
+  .btn-close-detail {
+    background-color: #ffffff;
+    margin: 0 0 0.5rem 0.5rem;
+    color: #000000;
+  }
+
+  .chips {
+    text-align: left;
+    margin-top: 1.5rem;
+    width: 100px;
+  }
+  
+  .chips div{
+    text-align: center;
+    font-size: 0.67rem;
+    padding: 0.3rem 0.3rem;
+    margin: 1.5rem 0;
+    border: 1px solid #dbd8d8;
+    border-radius: 40px;
+    background-color: #ffffff;
+    line-height: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .chips div span{
+    font-size: 0.57rem;
+    color: gray;
+  }

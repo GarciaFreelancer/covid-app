@@ -1,0 +1,67 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.generic-bg {
+    background-color: #e38748
+    ;
+}
+
+.generic-color {
+    color: #f0cb7b;
+}
+
+.white-color {
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.covid-logo {
+    width: 7%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card-section {
+    padding: 3rem 25rem 2rem 25rem;
+}
+
+.card-covid19 {
+    padding: 0 1rem;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .card-section {
+        padding: 2rem 1rem;
+    }
+
+    .covid-logo {
+        width: 17%;
+    }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .card-section {
+        padding: 4rem 7rem;
+    }
+}
+
+/* IPed Pro only */
+@media screen and (min-width: 1023px) and (max-width: 1025px) {
+    .card-section {
+        padding: 4rem 12rem;
+    }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    .card-covid19 {
+        height: calc(100vh - 210px);
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}

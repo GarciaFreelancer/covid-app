@@ -1,0 +1,151 @@
+<div class="coranaTable">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12">
+            <div class="global-date1"> 
+                {{ covid19GlobalDate?.cases | number:'':'fr-FR' }}
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="custom center">
+                <div class=""> 
+                    <div class="global-date global-date2">{{ covid19GlobalDate?.deaths | number:'':'fr-FR' }}
+                        <br>
+                        <span class="legend">Falecidos</span>
+                    </div>
+                </div>
+            
+
+                <div class=""> 
+                    <div class="global-date global-date2">{{ covid19GlobalDate?.recovered | number:'':'fr-FR' }}
+                        <br>
+                        <span class="legend">Recuperados</span>
+                    </div>
+                </div>
+
+                <div class=""> 
+                    <div class="global-date">{{ covid19GlobalDate?.active | number:'':'fr-FR' }}
+                        <br>
+                        <span class="legend">Doentes actualmente</span>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="corona-country-list">
+    <div class="custom container-list">
+        <div class="">
+            <div class="first-group">
+                <span class="c-list-number">*</span>
+                <img class="countryImage" src={{covid19Angola?.countryInfo?.flag}}>
+            </div>   
+        </div>
+        
+        <div class="second-group">
+            <span class="country-name">{{ covid19Angola?.country }}</span><br>
+            <span class="actulizedText" (click)="toggleDisplay()" >Ver detalhes</span>
+        </div>
+        <div class="third-group">
+            <span class="confirmed-value"> {{ covid19Angola?.cases | number:'':'fr-FR' }} </span>
+        </div>        
+    </div>
+    <!--Set detail -->
+    <div class="detail-container">
+        <div *ngIf="show === 10000">
+            <button mat-mini-fab class="btn-close-detail" (click) ="closeToggle()"><span class="material-icons">keyboard_arrow_up</span></button>
+            
+            <div class="detail-list">
+                <div class="detail-country "> 
+                    {{ covid19Angola?.cases | number:'':'fr-FR' }}
+                    <br>
+                    <span>Total de casos</span> 
+                </div>
+    
+                <div class="detail-country "> 
+                    {{ covid19Angola?.deaths | number:'':'fr-FR' }}
+                    <br>
+                    <span>Falecidos</span> 
+                </div>
+    
+                <div class="detail-country "> 
+                    {{ covid19Angola?.recovered | number:'':'fr-FR' }}
+                    <br>
+                    <span>Recuperados</span> 
+                </div>
+    
+                <div class="detail-country "> 
+                    {{ covid19Angola?.active | number:'':'fr-FR' }}
+                    <br>
+                    <span>Doentes actualmente</span> 
+                </div>
+    
+                <div class="detail-country "> 
+                    {{ covid19Angola?.critical | number:'':'fr-FR' }}
+                    <br>
+                    <span>Casos críticos</span> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngFor="let covidDate of covid19AllCountry; let i = index">
+    
+        <div class="custom container-list">
+            <div class="">
+                <div class="first-group">
+                    <span class="c-list-number">{{i+1}}</span>
+                    <img class="countryImage" src={{covidDate?.countryInfo.flag}}>
+                </div>   
+            </div>
+            
+            <div class="second-group">
+                <span class="country-name">{{ covidDate?.country }}</span><br>
+                <span class="actulizedText" (click)="clicked(i)" >Ver detalhes</span>
+            </div>
+            <div class="third-group">
+                <span class="confirmed-value"> {{ covidDate?.cases | number:'':'fr-FR' }} </span>
+            </div>        
+        </div>
+    
+        <div class="detail-container">
+            <div *ngIf="show === i" >
+                <button mat-mini-fab class="btn-close-detail" (click) ="closeToggle()"><span class="material-icons">keyboard_arrow_up</span></button>
+            
+            <div class="detail-list">
+                <div class="detail-country "> 
+                    {{ covidDate?.cases | number:'':'fr-FR' }}
+                    <br>
+                    <span>Total de casos</span> 
+                </div>
+    
+                <div class="detail-country "> 
+                    {{ covidDate?.deaths | number:'':'fr-FR' }}
+                    <br>
+                    <span>Falecidos</span> 
+                </div>
+    
+                <div class="detail-country "> 
+                    {{ covidDate?.recovered | number:'':'fr-FR' }}
+                    <br>
+                    <span>Recuperados</span> 
+                </div>
+    
+                <div class="detail-country "> 
+                    {{ covidDate?.active | number:'':'fr-FR' }}
+                    <br>
+                    <span>Doentes actualmente</span> 
+                </div>
+    
+                <div class="detail-country "> 
+                    {{ covidDate?.critical | number:'':'fr-FR' }}
+                    <br>
+                    <span>Casos críticos</span> 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
