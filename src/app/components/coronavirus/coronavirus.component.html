@@ -9,39 +9,34 @@
 
     <div>
         <div class="custom center">
-                <div class=""> 
-                    <div class="global-date global-date2">{{ covid19GlobalDate?.deaths | number:'':'fr-FR' }}
-                        <br>
-                        <span class="legend">Falecidos</span>
-                    </div>
+                <div class="global-date global-date2">{{ covid19GlobalDate?.deaths | number:'':'fr-FR' }}
+                    <br>
+                    <span class="legend">Falecidos</span>
                 </div>
             
 
-                <div class=""> 
+               
                     <div class="global-date global-date2">{{ covid19GlobalDate?.recovered | number:'':'fr-FR' }}
                         <br>
                         <span class="legend">Recuperados</span>
                     </div>
-                </div>
+                
 
-                <div class=""> 
+              
                     <div class="global-date">{{ covid19GlobalDate?.active | number:'':'fr-FR' }}
                         <br>
                         <span class="legend">Doentes actualmente</span>
                     </div>
-                </div>
         </div>
     </div>
 </div>
 
 <div class="corona-country-list">
     <div class="custom container-list">
-        <div class="">
             <div class="first-group">
                 <span class="c-list-number">*</span>
                 <img class="countryImage" src={{covid19Angola?.countryInfo?.flag}}>
             </div>   
-        </div>
         
         <div class="second-group">
             <span class="country-name">{{ covid19Angola?.country }}</span><br>
@@ -93,12 +88,10 @@
     <div *ngFor="let covidDate of covid19AllCountry; let i = index">
     
         <div class="custom container-list">
-            <div class="">
                 <div class="first-group">
                     <span class="c-list-number">{{i+1}}</span>
                     <img class="countryImage" src={{covidDate?.countryInfo.flag}}>
                 </div>   
-            </div>
             
             <div class="second-group">
                 <span class="country-name">{{ covidDate?.country }}</span><br>
