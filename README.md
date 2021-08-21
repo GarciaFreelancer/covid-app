@@ -2,6 +2,8 @@
 
 This project shows data from Covid-19 based on countries. Created with Angular in version 12.0.2.
 
+###Show this project in: https://covid-app-b0ad4.web.app/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
